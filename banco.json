@@ -1,0 +1,42 @@
+[
+    {
+        "numero": "12345678900-CC",
+        "cliente": {
+            "nome": "Luis Gustavo dos Santos da Rosa",
+            "cpf": "12345678900",
+            "senha": "1234"
+        },
+        "saldo": 950.0,
+        "tipo": "ContaCorrente"
+    },
+    {
+        "numero": "12345678900-CP",
+        "cliente": {
+            "nome": "Luis Gustavo dos Santos da Rosa",
+            "cpf": "12345678900",
+            "senha": "1234"
+        },
+        "saldo": 252.5,
+        "tipo": "ContaPoupanca"
+    },
+    {
+        "numero": "98765432100-CC",
+        "cliente": {
+            "nome": "Teste da Silva",
+            "cpf": "98765432100",
+            "senha": "4321"
+        },
+        "saldo": 300.0,
+        "tipo": "ContaCorrente"
+    },
+    {
+        "numero": "98765432100-CP",
+        "cliente": {
+            "nome": "Teste da Silva",
+            "cpf": "98765432100",
+            "senha": "4321"
+        },
+        "saldo": 0.0,
+        "tipo": "ContaPoupanca"
+    }
+]
