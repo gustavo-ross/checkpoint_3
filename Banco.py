@@ -34,7 +34,7 @@ class Banco:
             with open("banco.json", "r") as f:
                 dados = json.load(f)
                 for item in dados:
-                    # Adicionado a leitura da senha (usamos .get para evitar erros com contas antigas)
+                    # Leitura da senha (usando .get para evitar erros com contas antigas)
                     senha_salva = item["cliente"].get("senha", "1234") 
                     cli = Cliente(item["cliente"]["nome"], item["cliente"]["cpf"], senha_salva)
                     

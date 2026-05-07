@@ -42,7 +42,8 @@ def menu_logado(banco, cc, cp):
                 else: cp.depositar(valor)
                 banco.salvar_dados()
             else:
-                print("⚠️ Opção inválida.")
+                limpar_tela()
+                print("\n⚠️ Opção inválida.")
             enter_time()
 
         elif opcao == "2":

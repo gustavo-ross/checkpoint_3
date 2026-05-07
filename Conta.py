@@ -11,19 +11,19 @@ class Conta:
         if valor > 0:
             self._saldo += valor
             if not silencioso:
-                print(f"✅ Depósito de R$ {valor:.2f} efetuado com sucesso!")
+                print(f"\n✅ Depósito de R$ {valor:.2f} efetuado com sucesso!")
             return True
         else:
-            print("❌ Valor inválido para depósito.")
+            print("\n❌ Valor inválido para depósito.")
             return False
 
     def sacar(self, valor):
         if 0 < valor <= self._saldo:
             self._saldo -= valor
-            print(f"✅ Saque de R$ {valor:.2f} efetuado com sucesso!")
+            print(f"\n✅ Saque de R$ {valor:.2f} efetuado com sucesso!")
             return True
         else:
-            print("❌ Saldo insuficiente ou valor inválido.")
+            print("\n❌ Saldo insuficiente ou valor inválido.")
             return False
 
     def transferir(self, valor, conta_destino, is_pix=False):
@@ -32,12 +32,12 @@ class Conta:
             conta_destino.depositar(valor, silencioso=True)
             
             if is_pix:
-                print(f"💸 BZZZT! PIX de R$ {valor:.2f} enviado com sucesso para {conta_destino.cliente.nome}!")
+                print(f"\n💸 BZZZT! PIX de R$ {valor:.2f} enviado com sucesso para {conta_destino.cliente.nome}!")
             else:
-                print(f"🔄 Transferência interna de R$ {valor:.2f} concluída com sucesso!")
+                print(f"\n🔄 Transferência interna de R$ {valor:.2f} concluída com sucesso!")
             return True
         else:
-            print("❌ Saldo insuficiente para realizar a operação.")
+            print("\n❌ Saldo insuficiente para realizar a operação.")
             return False
 
     def to_dict(self):
